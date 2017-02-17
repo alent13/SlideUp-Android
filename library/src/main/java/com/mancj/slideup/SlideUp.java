@@ -593,7 +593,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
             case TOP:
                 if (immediately){
                     if (sliderView.getHeight() > 0){
-                        sliderView.setTranslationY(viewHeight);
+                        sliderView.setTranslationY(0);
                         sliderView.setVisibility(GONE);
                         notifyVisibilityChanged(GONE);
                     }else {
@@ -608,7 +608,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
             case BOTTOM:
                 if (immediately){
                     if (sliderView.getHeight() > 0){
-                        sliderView.setTranslationY(-viewHeight);
+                        sliderView.setTranslationY(0);
                         sliderView.setVisibility(GONE);
                         notifyVisibilityChanged(GONE);
                     }else {
@@ -623,7 +623,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
             case START:
                 if (immediately){
                     if (sliderView.getWidth() > 0){
-                        sliderView.setTranslationX(viewWidth);
+                        sliderView.setTranslationX(0);
                         sliderView.setVisibility(GONE);
                         notifyVisibilityChanged(GONE);
                     }else {
@@ -638,7 +638,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
             case END:
                 if (immediately){
                     if (sliderView.getWidth() > 0){
-                        sliderView.setTranslationX(-viewWidth);
+                        sliderView.setTranslationX(0);
                         sliderView.setVisibility(GONE);
                         notifyVisibilityChanged(GONE);
                     }else {
